@@ -1,27 +1,53 @@
+@media (max-width: 991px){
+    .terms{
+        height: 9vh;
+        padding: 8px 0;
+        &__nav{
+            width: 100%;
+        }
+    }
+
+    .training{
+        height: 18vh;
+        &__btn{
+            font-size: 17px;
+        }
+    }
+}
+@media(max-width: 575px){
+    .terms{
+        height: 10vh;
+    }
+    .training{
+        height: 15vh;
+        padding-top: 10px;
+        h1{
+            width: 95%;
+            font-size: 17px;
+        }
+    }
+    .menu{
+        &__card-link{
+            width: 118px;
+            height: 118px;
+        }
+    }
+}
+
 @media(max-width: 376px){
     .header{
-        min-height: 20px;
-        &__item-human{
-            width: 5%;
-        }
-        &__item-workout{
-            width: 40%;
-        }
         &__item-adult{
-            font-size: 9px;
-            width: 15px;
-            height: 15px;
+            font-size: 10px;
         }
     }
 
     .terms{
-        padding: 2px 0;
-        min-height: 50px;
+        padding: 0.5vh 0 2vh 0;
+        height: 16vh;
         &__descr{
             font-size: 9px;
         }
         &__nav{
-            margin-top: 3px;
             a{
                 font-size: 11px;
             }
@@ -29,17 +55,15 @@
     }
 
     .training{
+        height: 17vh;
         padding: 5px 0 10px 0;
-        min-height: 55px;
         h1{
-            font-size: 10px;
+            font-size: 13px;
             width: 270px;
         }
         &__btn{
             width: 70%;
-            height: 25px;
             font-size: 11px;
-            margin-top: 5px;
         }
     }
     .menu{
@@ -48,84 +72,50 @@
             height: 15px;
             width: 20%;
         }
-        &__cards{
-            height: 166px;
-            margin-top: 3px;
-        }
         &__card-link{
-            width: 82px;
-            height: 82px;
-        }
-        &__card-next-wrapper{
-            width: 82px;
-        }
-        // &__title{
-        //     margin: 0 2px;
-        // }
-        // &__descr{
-        //     margin: 0 2px;
-        // }
-        &__card-img{
-            object-fit: scale-down;
-            border-radius: 10px;
+            width: 100px;
+            height: 100px;
         }
     }
 }
 
-@media(min-width: 540px){
-    .training{
-        padding-top: 10px;
-        min-height: 225px;
-        &__btn{
-            margin-top: 20px;
+@media(max-width: 367px){
+    .header{
+        &__item-adult{
+            font-size: 9px;
         }
     }
-}
 
-@media(min-width: 768px){
     .terms{
+        height: 15vh;
         &__descr{
-            font-size: 12px;
+            font-size: 9px;
         }
         &__nav{
-            width: 700px;
+            a{
+                font-size: 11px;
+            }
         }
     }
-    .menu{
-        &__title{
-            font-size: 12px;
-        }
-        &__descr{
+
+    .training{
+        padding: 5px 0 10px 0;
+        h1{
             font-size: 11px;
         }
-        &__card-next{
-            font-size: 10px;
-            width: 60px;
-            height: 60px;
+        &__btn{
+            width: 70%;
         }
     }
-    .footer{
-        ul{
-            font-size: 12px;
-        }
-    }
-}
-
-@media(min-width: 1024px){
     .menu{
-        &__cards{
-            height: 150px;
+        &__btn-cancel{
+            font-size: 9px;
+            height: 15px;
+            width: 20%;
+        }
+        &__card-link{
+            width: 80px;
+            height: 80px;
         }
     }
-    .footer{
-        margin-top: 30px;
-    }
 }
-
-// @media(min-width: 280px){
-//     .menu{
-//         &__cards{
-//             height: auto;
-//         }
-//     }
-// }

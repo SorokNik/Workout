@@ -8,27 +8,39 @@
 
 .container{
     width: 97%;
+    height: 100%;
     margin: 0 auto;
 }
 
 .header{
-    min-height: 70px;
+    height: 7vh;
     margin-top: 3px;
+    &__item{
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
     &__items{
+        height: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        align-content: center;
     }
     &__item-human{
         margin-right: 15px;
+        height: 90%;
+    }
+    &__item-workout{
+        width: 60%;
     }
     &__item-adult{
         background: #00b165;
         border-radius: 100%;
         color: #fff;
         font-size: 14px;
-        width: 32px;
-        height: 32px;
+        width: 6vh;
+        height: 6vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -36,9 +48,14 @@
 }
 
 .terms{
-    min-height: 78px;
     background: #005f1f;
-    padding: 8px 0 8px 0;
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+    }
     &__descr{
         font-size: 10px;
         color: #369b57;
@@ -46,10 +63,8 @@
         text-align: center;
         display: block;
     }
-    &__nav{       
-        margin: 0 auto;
-        margin-top: 20px;
-        padding: 0 2px 0 2px;
+    &__nav{  
+        width: 40%;
         display: flex;
         justify-content: space-between;
         a{
@@ -62,13 +77,20 @@
 }
 
 .training{
-    min-height: 250px;
     background: url(../bg.jpg) center center/cover no-repeat;
-    padding: 30px 0 12px 0;
+    padding: 20px 0 12px 0;
+    &__wrapper{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
     h1{
         margin: 0 auto;
         width: 75%;
-        font-size: 24px;
+        font-size: 20px;
         font-weight: 900;
         color: #fff;
         text-align: center;
@@ -77,13 +99,12 @@
     &__btn{
         display: block;
         margin: 0 auto;
-        margin-top: 45px;
-        height: 88px;
+        height: 6vh;
         width: 352px;
         background-color: #f69c3b;
         border-radius: 10px;
         border: 2px solid #ffb65c;
-        font-size: 20px;
+        font-size: 80%;
         font-weight: 900;
         color: #fff;
         text-transform: uppercase;
@@ -91,7 +112,16 @@
 }
 
 .menu{
-    padding: 5px 0 5px 0;
+    padding: 5px 0 0 0;
+    height: 58.7vh;
+    &__wrapper{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
     &__btn-cancel{
         display: block;
         margin: 0 auto;
@@ -105,57 +135,27 @@
         border-radius: 3px;
     }
     &__cards{
-        margin-top: 5px;
-        height: 260px;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
         align-items: center;
+        height: 83%;
+        width: 100%;
     }
     &__card-link{
         display: block;
         border-radius: 5px;
-        border: 1px solid #d3d3d3;        
-        width: 118px;
-        height: 118px;
-        background: #bdbdbd;
-        color: #fff;
+        width: 150px;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         text-decoration: none;
-        position: relative;
     }
     &__card-img{
         width: 100%;
+        height: 100%;
         object-fit: cover;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-    // &__card{
-    //     width: 100%;
-    //     position: absolute;
-    //     top: 50%;
-    //     transform: translateY(-50%);
-    //     z-index: 1;
-        
-    // }
-    // &__title{
-    //     font-size: 9px;
-    //     margin: 0 10px;
-    //     font-weight: 700;
-    //     text-transform: uppercase;
-    // }
-    // &__descr{
-    //     margin: 0 10px;
-    //     font-size: 9px;
-    //     font-weight: 900;
-    //     z-index: 1;
-    //     margin-top: 5px;
-    // }
-    &__card-next-wrapper{
-        width: 118px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
     &__card-next{
         width: 50px;
@@ -179,7 +179,6 @@
 }
 
 .footer{
-    padding-bottom: 3px;
     ul{
         font-weight: 500;
         font-size: 9px;
